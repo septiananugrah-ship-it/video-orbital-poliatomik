@@ -1,4 +1,4 @@
-# Naskah Voice-Over — *Elektron Tanpa Alamat* (Kimia Kuantum: Teori Orbital Molekul)
+# Naskah Voice-Over — *Orbital Milik Bersama* (Kimia Kuantum: Orbital Molekul Poliatomik & Hückel)
 
 Durasi total **11:20** (680.5 dtk) · 1126 kata · tempo baca ±5.3 suku kata/detik (±120 kata/menit saat berbicara).
 
