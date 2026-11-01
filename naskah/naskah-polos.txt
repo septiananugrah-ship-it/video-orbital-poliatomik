@@ -1,0 +1,120 @@
+[00:00] Dua puncak metana
+
+Menurut hibridisasi, metana punya empat ikatan C–H yang identik, dari empat orbital sp tiga yang sama persis.
+Kalau begitu, melepas elektron dari metana seharusnya selalu butuh energi yang sama.
+Tetapi spektroskopi fotoelektron menunjukkan dua puncak: sekitar empat belas dan dua puluh tiga elektronvolt.
+Ada elektron yang terikat jauh lebih kuat daripada yang lain. Siapa yang benar?
+Jawabannya membawa kita ke orbital yang menyebar ke seluruh molekul: orbital milik bersama.
+
+[00:46] Peta video
+
+Perjalanan kita punya tiga bagian.
+Pertama, prinsip dasar: orbital kelompok, lalu orbital molekul berilium hidrida, metana, dan air.
+Kedua, implementasi dalam kimia: metode Hückel untuk elektron pi, butadiena, benzena, aromatisitas, dan warna.
+Ketiga, penerapan: logam dan karbon monoksida, desain katalis, dan elektronika organik.
+
+[01:17] Bab 01 — Orbital kelompok
+
+Pada molekul banyak atom, kita tidak menggabungkan orbital satu per satu. Ada cara yang lebih rapi.
+Pertama, gabungkan dulu orbital atom-atom luar, misalnya orbital satu s semua hidrogen, menjadi orbital kelompok.
+Setiap orbital kelompok punya pola fase tertentu: semua sefase, atau sebagian positif dan sebagian negatif.
+Kedua, cocokkan tiap orbital kelompok dengan orbital atom pusat yang simetrinya sama.
+Yang cocok bergabung menjadi orbital ikatan dan antiikatan. Yang tidak punya pasangan tetap sebagai orbital nonikatan.
+
+[02:01] Bab 02 — Berilium hidrida: tiga atom
+
+Contoh paling sederhana: berilium hidrida dalam fase gas, molekul lurus H–Be–H.
+Dua orbital satu s hidrogen membentuk dua orbital kelompok: satu sefase, satu berlawanan fase.
+Kelompok sefase cocok dengan orbital dua s berilium. Kelompok berlawanan fase cocok dengan dua p z.
+Hasilnya dua orbital ikatan, masing-masing membentang di atas ketiga atom sekaligus.
+Empat elektron mengisi keduanya. Tidak ada ikatan yang terkunci di antara dua atom saja: inilah orbital terdelokalisasi.
+
+[02:42] Bab 03 — Metana: misteri dua puncak
+
+Kembali ke metana. Empat orbital satu s hidrogen membentuk empat orbital kelompok.
+Satu kelompok semua sefase, cocok dengan dua s karbon. Tiga lainnya cocok dengan tiga orbital dua p.
+Jadi ada satu orbital ikatan yang rendah sekali, dan tiga orbital ikatan setara yang lebih tinggi.
+Dua elektron di orbital rendah memberi puncak dua puluh tiga elektronvolt. Enam elektron di tiga orbital tinggi memberi puncak empat belas.
+Apakah hibridisasi salah? Tidak. Kerapatan elektron totalnya sama. Hibridisasi menggambarkan ikatan, orbital molekul menggambarkan energi tiap elektron.
+
+[03:30] Bab 04 — Air: pasangan bebas yang sebenarnya
+
+Air punya delapan elektron valensi, yang mengisi empat orbital molekul terisi.
+Spektrum fotoelektronnya memang menunjukkan empat puncak: sekitar dua belas koma enam, empat belas koma tujuh, delapan belas koma lima, dan tiga puluh dua elektronvolt.
+Orbital terisi tertinggi air adalah orbital p oksigen yang tegak lurus bidang molekul. Ia tidak bergabung dengan hidrogen sama sekali.
+Inilah pasangan elektron bebas versi orbital molekul: orbital nonikatan.
+Elektron di orbital inilah yang pertama dipakai air saat mendonorkan elektron, misalnya ketika membentuk ikatan hidrogen.
+
+[04:15] Bab 05 — Metode Hückel
+
+Untuk molekul organik terkonjugasi, ada cara cepat yang diusulkan Erich Hückel tahun seribu sembilan ratus tiga puluh satu.
+Idenya: pisahkan elektron pi dari kerangka sigma, dan hitung hanya orbital p yang tegak lurus bidang molekul.
+Cukup dua parameter. Alfa: energi elektron di orbital p satu karbon. Beta: interaksi antara dua karbon yang bertetangga.
+Atom yang tidak bertetangga dianggap tidak berinteraksi sama sekali.
+Beta bernilai negatif, jadi energi alfa ditambah beta lebih rendah, lebih stabil, daripada alfa.
+
+[04:59] Bab 06 — Etilena dan butadiena
+
+Etilena: dua orbital p memberi dua orbital pi, dengan energi alfa ditambah beta dan alfa dikurangi beta.
+Butadiena: empat karbon, empat orbital p, empat orbital pi.
+Energinya alfa ditambah satu koma enam dua beta, alfa ditambah nol koma enam dua beta, lalu pasangan cerminnya di atas alfa.
+Perhatikan simpulnya: orbital terendah tanpa simpul, lalu satu, dua, dan tiga simpul. Makin banyak simpul, makin tinggi energinya.
+Empat elektron pi mengisi dua orbital terbawah. Energinya lebih rendah daripada dua ikatan rangkap terpisah: elektron pi menyebar ke keempat karbon.
+
+[05:47] Bab 07 — Benzena dan lingkaran Frost
+
+Benzena: enam orbital p membentuk enam orbital pi.
+Ada trik indah untuk cincin: gambar segi enam di dalam lingkaran, satu sudut menunjuk ke bawah. Setiap sudut adalah satu tingkat energi.
+Hasilnya: satu orbital alfa ditambah dua beta, dua orbital alfa ditambah beta, dua orbital alfa dikurangi beta, dan satu alfa dikurangi dua beta.
+Enam elektron pi mengisi tepat tiga orbital ikatan. Tidak satu pun masuk ke orbital antiikatan.
+Dibanding tiga ikatan rangkap terpisah, benzena lebih stabil sebesar dua beta, sekitar seratus lima puluh kilojoule per mol, sama dengan energi resonansi yang kita temui di video ikatan valensi.
+
+[06:39] Bab 08 — Aturan aromatisitas
+
+Lingkaran Frost menjelaskan aturan Hückel: cincin datar terkonjugasi stabil istimewa bila punya empat n tambah dua elektron pi.
+Dua, enam, sepuluh elektron: semua orbital ikatan terisi penuh. Benzena, anion siklopentadienil, dan kation tropilium semuanya punya enam.
+Tapi siklobutadiena hanya punya empat elektron pi.
+Lingkaran Frost-nya memberi dua orbital tak berikatan yang sama energinya, dan dua elektron terakhir masuk satu-satu, tak berpasangan.
+Molekul ini sangat tidak stabil, disebut antiaromatik. Ia baru bisa diamati pada suhu sangat rendah, dan bentuknya terdistorsi menjadi persegi panjang.
+
+[07:28] Bab 09 — Konjugasi dan warna
+
+Makin panjang rantai terkonjugasi, makin rapat orbital-orbital pi, dan celah HOMO–LUMO makin kecil.
+Polanya mirip partikel dalam kotak: kotak yang lebih panjang, tingkat energi yang lebih rapat.
+Butadiena menyerap ultraviolet. Tapi beta-karoten, dengan sebelas ikatan rangkap terkonjugasi, menyerap cahaya biru sekitar empat ratus lima puluh nanometer.
+Mata kita melihat sisanya: jingga. Itulah warna wortel.
+Pewarna, pigmen daun, dan zat penglihatan di mata kita bekerja dengan prinsip yang sama.
+
+[08:09] Bab 10 — Logam dan karbon monoksida
+
+Ingat karbon monoksida: HOMO-nya di ujung karbon, dan LUMO-nya adalah orbital pi bintang.
+Saat CO mendekati logam transisi, HOMO karbon mendonorkan elektron ke orbital d logam yang kosong.
+Sebaliknya, orbital d logam yang terisi mengembalikan elektron ke pi bintang CO. Ini disebut donasi balik.
+Elektron di pi bintang melemahkan ikatan C–O. Frekuensi regangannya turun dari dua ribu seratus empat puluh tiga per sentimeter pada CO bebas menjadi sekitar dua ribu atau kurang.
+Model donasi dan donasi balik ini menjelaskan cara kerja banyak katalis logam.
+
+[08:54] Bab 11 — Merancang katalis dengan orbital
+
+Katalis bekerja dengan mengatur aliran elektron antara orbital perbatasan pereaksi dan permukaan katalis.
+Ikatan yang terlalu lemah membuat pereaksi tidak menempel. Terlalu kuat, produknya tidak mau lepas.
+Katalis terbaik berada di tengah, dan posisi orbital logam menentukan di mana letak tengah itu.
+Kini kimiawan menghitung orbital calon katalis di komputer dengan teori fungsional kerapatan, sebelum mensintesisnya di laboratorium.
+Bahkan material berbasis karbon dirancang dengan mengatur orbitalnya, misalnya dengan menyisipkan atom nitrogen ke kerangka karbon.
+
+[09:39] Bab 12 — Elektronika organik
+
+Molekul terkonjugasi juga bisa menjadi semikonduktor.
+Pada sel surya organik, cahaya mengangkat elektron dari HOMO ke LUMO molekul pendonor.
+Elektron itu lalu melompat ke LUMO molekul penerima yang sedikit lebih rendah, dan arus listrik mengalir.
+Pada layar OLED, prosesnya terbalik: elektron dan lubang bertemu, dan selisih energinya keluar sebagai cahaya.
+Warna layar ditentukan oleh celah HOMO–LUMO, yang dirancang dengan memilih panjang konjugasi.
+
+[10:17] Bab 13 — Merangkai semuanya
+
+Mari rangkum.
+Orbital kelompok dari atom luar dicocokkan dengan orbital atom pusat yang simetrinya sama.
+Orbital molekul metana menjelaskan dua puncak fotoelektron, tanpa membantah hibridisasi.
+Metode Hückel dengan alfa dan beta meramal energi elektron pi butadiena dan benzena.
+Aturan empat n tambah dua memisahkan aromatik dari antiaromatik, dan panjang konjugasi menentukan warna.
+Donasi dan donasi balik menjelaskan ikatan logam dengan CO dan cara kerja katalis.
+Di balik semua pencocokan itu ada satu kata kunci: simetri. Itulah topik video berikutnya.
