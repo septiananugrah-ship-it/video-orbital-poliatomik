@@ -2,8 +2,8 @@ import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {EASE_IN_OUT, cyc, rand, ramp} from '../anim';
 import {Glow, Stage} from '../components/primitives';
-import {MOStack, O2_MO} from '../components/moD';
-import {POrb, RichLabel, Spin} from '../components/vbD';
+import {HexIcon, POrb, Spin} from '../components/vbD';
+import {Render3D, VbDefs, methane} from '../components/vbC';
 import {useScene} from '../SceneContext';
 import {C, FONT} from '../theme';
 
@@ -29,69 +29,80 @@ export const Outro: React.FC = () => {
     <AbsoluteFill style={{opacity: out}}>
       <Stage>
         <Glow x={960} y={300} r={500} color="violet" opacity={0.15} />
-        {/* hiasan: diagram MO O₂ mini (π* ↑↑), awan orbital melayang */}
+        <VbDefs />
+        {/* hiasan poliatomik: lingkaran Frost benzena, butadiena dengan simpul, CH₄ berputar */}
         <g opacity={waves}>
-          {/* kiri: diagram MO O₂ */}
-          <RichLabel x={185} y={112} parts={[['O'], ['2', 'sub']]} size={26} color={C.red} weight={700} />
-          <MOStack
-            x={170}
-            y={392}
-            levels={O2_MO}
-            scale={0.6}
-            w={74}
-            t={t}
-            size={18}
-            lit={(i) => (O2_MO[i].kind === 'piStar' ? 0.6 + 0.4 * Math.sin(t * 2.4) : 0)}
-          />
-          {/* tengah atas: dua elektron π* sejajar */}
-          {[-1, 1].map((s) => (
-            <g key={s}>
-              <line x1={960 + s * 34 - 22} y1={104} x2={960 + s * 34 + 22} y2={104} stroke={C.pink} strokeWidth={5} strokeLinecap="round" />
-              <line x1={960 + s * 34 - 22} y1={104} x2={960 + s * 34 + 22} y2={104} stroke={C.pink} strokeWidth={16} strokeOpacity={0.12 + 0.1 * Math.sin(t * 2)} strokeLinecap="round" />
-              <Spin x={960 + s * 34} y={82 + 3 * Math.sin(t * 2 + s)} up len={34} width={4} />
-            </g>
-          ))}
-          {/* kanan: awan σ ikatan + orbital π* */}
+          {/* kiri: lingkaran Frost benzena (6 e⁻ di 3 MO ikatan) */}
           {(() => {
-            const pulse = 0.5 + 0.5 * Math.sin(t * 1.6);
-            const bob = 6 * Math.sin(t * 0.9);
+            const x = 200;
+            const y = 255;
+            const R = 80;
+            const ys = [1, 0.5, 0.5, -0.5, -0.5, -1].map((v) => y + R * v);
+            const xs = [0, -0.866, 0.866, -0.866, 0.866, 0].map((v) => x + R * v);
             return (
               <g>
-                <ellipse cx={1740} cy={190 + bob} rx={74} ry={34} fill={C.cyan} opacity={0.14 + 0.08 * pulse} />
-                <ellipse cx={1740} cy={190 + bob} rx={44} ry={22} fill={C.cyan} opacity={0.28 + 0.12 * pulse} />
-                <circle cx={1716} cy={190 + bob} r={5} fill="#fff" />
-                <circle cx={1764} cy={190 + bob} r={5} fill="#fff" />
-                <g transform={`rotate(${8 * Math.sin(t * 0.7)} 1740 ${330 - bob})`}>
-                  <POrb x={1714} y={330 - bob} L={44} w={15} />
-                  <POrb x={1766} y={330 - bob} L={44} w={15} ang={180} />
-                  <line x1={1740} y1={330 - bob - 56} x2={1740} y2={330 - bob + 56} stroke={C.red} strokeWidth={2} strokeDasharray="5 5" opacity={0.7} />
-                </g>
+                <circle cx={x} cy={y} r={R} fill="none" stroke={C.muted} strokeWidth={2.5} opacity={0.6} />
+                <polygon points={[0, 2, 4, 5, 3, 1].map((k) => `${xs[k]},${ys[k]}`).join(' ')} fill="none" stroke={C.mint} strokeWidth={3} opacity={0.55} />
+                <line x1={x - R - 30} y1={y} x2={x + R + 30} y2={y} stroke={C.muted} strokeWidth={1.5} strokeDasharray="5 6" opacity={0.5} />
+                {xs.map((px, k) => (
+                  <g key={k}>
+                    <line x1={px - 20} y1={ys[k]} x2={px + 20} y2={ys[k]} stroke={k < 3 ? C.cyan : C.red} strokeWidth={14} strokeOpacity={0.12 + 0.08 * Math.sin(t * 2 + k)} strokeLinecap="round" />
+                    <line x1={px - 20} y1={ys[k]} x2={px + 20} y2={ys[k]} stroke={k < 3 ? C.cyan : C.red} strokeWidth={5} strokeLinecap="round" />
+                    {k < 3 ? (
+                      <>
+                        <Spin x={px - 7} y={ys[k] - 16 + 2 * Math.sin(t * 2.4 + k)} up len={24} width={3} />
+                        <Spin x={px + 7} y={ys[k] - 16 - 2 * Math.sin(t * 2.4 + k)} up={false} len={24} width={3} />
+                      </>
+                    ) : null}
+                  </g>
+                ))}
+                <text x={x} y={y + R + 42} textAnchor="middle" fontFamily={FONT.sans} fontSize={24} fill={C.mint}>
+                  4n + 2
+                </text>
               </g>
             );
           })()}
-          {Array.from({length: 14}, (_, k) => {
+          {/* atas tengah: butadiena ψ₂ (satu simpul) */}
+          {(() => {
+            const ph = [1, 1, -1, -1];
+            const bob = 3 * Math.sin(t * 1.4);
+            return (
+              <g transform={`translate(0 ${bob})`}>
+                <line x1={960 - 105} y1={86} x2={960 + 105} y2={86} stroke="#c9d3f2" strokeWidth={4} opacity={0.6} />
+                {ph.map((s, k) => (
+                  <POrb key={k} x={960 - 105 + k * 70} y={86} L={34 * (k === 0 || k === 3 ? 0.8 : 1)} w={13} ang={s > 0 ? 0 : 180} glow={0.5 + 0.5 * Math.sin(t * 2)} />
+                ))}
+                <line x1={960} y1={40} x2={960} y2={132} stroke={C.red} strokeWidth={2.5} strokeDasharray="5 5" opacity={0.6 + 0.3 * Math.sin(t * 2)} />
+              </g>
+            );
+          })()}
+          {/* kanan: CH₄ berputar */}
+          <Render3D items={methane({cx: 1720, cy: 270, s: 78, yaw: t * 0.5, pitch: -0.3 + 0.1 * Math.sin(t * 0.4), persp: 8})} />
+          {Array.from({length: 12}, (_, k) => {
             const ph = ((t * (0.035 + 0.02 * rand(k)) + rand(k * 3.1)) % 1 + 1) % 1;
             const x = 140 + ph * 1640 + 40 * rand(k * 5.1);
-            const y = 900 + 110 * rand(k * 7.3) + 12 * Math.sin(t * 0.7 + k);
+            const y = 940 + 70 * rand(k * 7.3) + 12 * Math.sin(t * 0.7 + k);
             const op = 0.3 * cyc(ph);
             const kind = k % 3;
             const rot = t * 20 * (rand(k * 2.2) - 0.5);
             return (
               <g key={k} opacity={op} transform={`rotate(${rot} ${x} ${y})`}>
                 {kind === 0 ? (
-                  <POrb x={x} y={y} L={30} w={11} ang={rand(k) * 60 - 30} />
+                  <HexIcon x={x} y={y} r={26} mode="ring" width={3} />
                 ) : kind === 1 ? (
                   <g>
-                    <ellipse cx={x} cy={y} rx={40} ry={18} fill={C.cyan} opacity={0.5} />
-                    <circle cx={x - 14} cy={y} r={4} fill="#fff" />
-                    <circle cx={x + 14} cy={y} r={4} fill="#fff" />
+                    {[0, 1, 2, 3].map((j) => (
+                      <POrb key={j} x={x - 36 + j * 24} y={y} L={16} w={7} ang={j < 2 ? 0 : 180} />
+                    ))}
                   </g>
                 ) : (
                   <g>
-                    <line x1={x - 26} y1={y} x2={x + 26} y2={y} stroke={C.red} strokeWidth={4} strokeLinecap="round" />
-                    <line x1={x - 26} y1={y + 34} x2={x + 26} y2={y + 34} stroke={C.cyan} strokeWidth={4} strokeLinecap="round" />
-                    <Spin x={x - 7} y={y + 20} up len={24} width={3} />
-                    <Spin x={x + 7} y={y + 20} up={false} len={24} width={3} />
+                    {[0, 1, 2].map((j) => {
+                      const a = (j * 2 * Math.PI) / 3 + Math.PI / 2;
+                      return <line key={j} x1={x} y1={y} x2={x + 26 * Math.cos(a)} y2={y + 26 * Math.sin(a)} stroke="#c9d3f2" strokeWidth={4} />;
+                    })}
+                    <line x1={x} y1={y} x2={x} y2={y - 28} stroke="#c9d3f2" strokeWidth={4} />
+                    <circle cx={x} cy={y} r={9} fill="#59627a" />
                   </g>
                 )}
               </g>
