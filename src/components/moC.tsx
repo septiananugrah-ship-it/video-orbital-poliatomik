@@ -55,7 +55,7 @@ export const MOLevel: React.FC<{
           stroke={color}
           strokeWidth={width}
           strokeLinecap="round"
-          opacity={draw > 0.01 ? 1 : 0}
+          opacity={Math.min(1, draw * 12)}
         />
       ))}
       {Array.from({length: 2 * n}, (_, k) => {
