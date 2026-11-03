@@ -8,18 +8,19 @@ const Cover: React.FC = () => (
   <AbsoluteFill style={{background: `radial-gradient(ellipse 70% 70% at 70% 45%, #4a2f0a 0%, ${C.bg2} 45%, ${C.bg} 100%)`}}>
     <Stage>
       <Glow x={1420} y={460} r={560} color="gold" opacity={0.22} />
-      <rect x={1020} y={620} width={800} height={150} rx={12} fill="rgba(6,10,24,0.85)" stroke={C.faint} strokeWidth={3} />
-      {[1310, 1340].map((x) => (
-        <rect key={x} x={x} y={636} width={9} height={118} fill="#ffd23a" opacity={0.95} />
-      ))}
-      <text x={1420} y={810} textAnchor="middle" fontFamily={FONT.mono} fontSize={30} fill={C.muted}>
-        α + 2β
+      <circle cx={1420} cy={400} r={170} fill="none" stroke={C.muted} strokeWidth={3} strokeDasharray="8 10" />
+      <polygon points="1420.0,230.0 1272.8,315.0 1272.8,485.0 1420.0,570.0 1567.2,485.0 1567.2,315.0" fill="none" stroke={C.gold} strokeWidth={8} strokeLinejoin="round" />
+      <circle cx={1420} cy={400} r={100} fill="none" stroke={C.amber} strokeWidth={6} opacity={0.9} />
+      {[[230, 1], [315, 2], [485, 2], [570, 1]].map(([y, n], i) =>
+        Array.from({length: n}, (_, j) => {
+          const cx = 1720 + (n === 2 ? (j ? 40 : -40) : 0);
+          return <line key={`${y}-${j}`} x1={cx - 32} y1={y} x2={cx + 32} y2={y} stroke={i < 2 ? C.red : C.cyan} strokeWidth={6} strokeLinecap="round" />;
+        }),
+      )}
+      <text x={1420} y={680} textAnchor="middle" fontFamily={FONT.mono} fontSize={30} fill={C.muted}>
+        benzena · lingkaran Frost · α + 2β
       </text>
     </Stage>
-    <div style={{position: 'absolute', left: 1080, top: 150, width: 700, textAlign: 'center', fontFamily: FONT.serif, color: C.gold, textShadow: '0 0 40px rgba(255,194,74,0.5)'}}>
-      <span style={{fontSize: 260, fontStyle: 'italic'}}>π</span>
-      <span style={{fontSize: 130, verticalAlign: 'super'}}>*</span>
-    </div>
     <div style={{position: 'absolute', left: 110, top: 220, width: 900}}>
       <div style={{fontFamily: FONT.mono, fontSize: 30, letterSpacing: 8, color: C.gold}}>KIMIA KUANTUM · ORBITAL POLIATOMIK</div>
       <div style={{fontFamily: FONT.sans, fontSize: 70, fontWeight: 800, color: C.ink, lineHeight: 1.05, marginTop: 10}}>Orbital Poliatomik &amp; Hückel</div>
