@@ -1,0 +1,20 @@
+// id adegan → nama berkas komponen (untuk scripts/check-cues.ts)
+export const SCENES_FILE: Record<string, string> = {
+  hook: 'Hook',
+  title: 'Title',
+  roadmap: 'Roadmap',
+  salc: 'Salc',
+  beh2: 'BeH2',
+  methane: 'Methane',
+  water: 'Water',
+  huckel: 'Huckel',
+  butadiene: 'Butadiene',
+  benzene: 'Benzene',
+  aromatic: 'Aromatic',
+  color: 'Color',
+  metalco: 'MetalCO',
+  catalyst: 'Catalyst',
+  organic: 'Organic',
+  recap: 'Recap',
+  outro: 'Outro',
+};

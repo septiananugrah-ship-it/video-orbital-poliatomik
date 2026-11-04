@@ -1,0 +1,303 @@
+1
+00:00:01,600 --> 00:00:09,870
+Menurut hibridisasi, metana punya empat ikatan C–H yang identik, dari empat orbital sp tiga yang sama persis.
+
+2
+00:00:09,870 --> 00:00:16,619
+Kalau begitu, melepas elektron dari metana seharusnya selalu butuh energi yang sama.
+
+3
+00:00:16,619 --> 00:00:24,809
+Tetapi spektroskopi fotoelektron menunjukkan dua puncak: sekitar empat belas dan dua puluh tiga elektronvolt.
+
+4
+00:00:24,809 --> 00:00:31,114
+Ada elektron yang terikat jauh lebih kuat daripada yang lain. Siapa yang benar?
+
+5
+00:00:31,114 --> 00:00:38,472
+Jawabannya membawa kita ke orbital yang menyebar ke seluruh molekul: orbital milik bersama.
+
+6
+00:00:47,467 --> 00:00:50,519
+Perjalanan kita punya tiga bagian.
+
+7
+00:00:50,519 --> 00:00:58,566
+Pertama, prinsip dasar: orbital kelompok, lalu orbital molekul berilium hidrida, metana, dan air.
+
+8
+00:00:58,566 --> 00:01:08,322
+Kedua, implementasi dalam kimia: metode Hückel untuk elektron pi, butadiena, benzena, aromatisitas, dan warna.
+
+9
+00:01:08,322 --> 00:01:15,802
+Ketiga, penerapan: logam dan karbon monoksida, desain katalis, dan elektronika organik.
+
+10
+00:01:18,400 --> 00:01:26,115
+Pada molekul banyak atom, kita tidak menggabungkan orbital satu per satu. Ada cara yang lebih rapi.
+
+11
+00:01:26,115 --> 00:01:35,151
+Pertama, gabungkan dulu orbital atom-atom luar, misalnya orbital satu s semua hidrogen, menjadi orbital kelompok.
+
+12
+00:01:35,151 --> 00:01:44,107
+Setiap orbital kelompok punya pola fase tertentu: semua sefase, atau sebagian positif dan sebagian negatif.
+
+13
+00:01:44,107 --> 00:01:50,667
+Kedua, cocokkan tiap orbital kelompok dengan orbital atom pusat yang simetrinya sama.
+
+14
+00:01:50,667 --> 00:01:59,703
+Yang cocok bergabung menjadi orbital ikatan dan antiikatan. Yang tidak punya pasangan tetap sebagai orbital nonikatan.
+
+15
+00:02:02,300 --> 00:02:08,426
+Contoh paling sederhana: berilium hidrida dalam fase gas, molekul lurus H–Be–H.
+
+16
+00:02:08,426 --> 00:02:16,249
+Dua orbital satu s hidrogen membentuk dua orbital kelompok: satu sefase, satu berlawanan fase.
+
+17
+00:02:16,249 --> 00:02:24,331
+Kelompok sefase cocok dengan orbital dua s berilium. Kelompok berlawanan fase cocok dengan dua p z.
+
+18
+00:02:24,331 --> 00:02:30,891
+Hasilnya dua orbital ikatan, masing-masing membentang di atas ketiga atom sekaligus.
+
+19
+00:02:30,891 --> 00:02:41,190
+Empat elektron mengisi keduanya. Tidak ada ikatan yang terkunci di antara dua atom saja: inilah orbital terdelokalisasi.
+
+20
+00:02:43,800 --> 00:02:50,372
+Kembali ke metana. Empat orbital satu s hidrogen membentuk empat orbital kelompok.
+
+21
+00:02:50,372 --> 00:02:58,464
+Satu kelompok semua sefase, cocok dengan dua s karbon. Tiga lainnya cocok dengan tiga orbital dua p.
+
+22
+00:02:58,464 --> 00:03:05,968
+Jadi ada satu orbital ikatan yang rendah sekali, dan tiga orbital ikatan setara yang lebih tinggi.
+
+23
+00:03:05,968 --> 00:03:16,125
+Dua elektron di orbital rendah memberi puncak dua puluh tiga elektronvolt. Enam elektron di tiga orbital tinggi memberi puncak empat belas.
+
+24
+00:03:16,125 --> 00:03:28,613
+Apakah hibridisasi salah? Tidak. Kerapatan elektron totalnya sama. Hibridisasi menggambarkan ikatan, orbital molekul menggambarkan energi tiap elektron.
+
+25
+00:03:31,200 --> 00:03:37,194
+Air punya delapan elektron valensi, yang mengisi empat orbital molekul terisi.
+
+26
+00:03:37,194 --> 00:03:49,569
+Spektrum fotoelektronnya memang menunjukkan empat puncak: sekitar dua belas koma enam, empat belas koma tujuh, delapan belas koma lima, dan tiga puluh dua elektronvolt.
+
+27
+00:03:49,569 --> 00:03:59,537
+Orbital terisi tertinggi air adalah orbital p oksigen yang tegak lurus bidang molekul. Ia tidak bergabung dengan hidrogen sama sekali.
+
+28
+00:03:59,537 --> 00:04:05,463
+Inilah pasangan elektron bebas versi orbital molekul: orbital nonikatan.
+
+29
+00:04:05,463 --> 00:04:14,487
+Elektron di orbital inilah yang pertama dipakai air saat mendonorkan elektron, misalnya ketika membentuk ikatan hidrogen.
+
+30
+00:04:17,100 --> 00:04:26,302
+Untuk molekul organik terkonjugasi, ada cara cepat yang diusulkan Erich Hückel tahun seribu sembilan ratus tiga puluh satu.
+
+31
+00:04:26,302 --> 00:04:34,314
+Idenya: pisahkan elektron pi dari kerangka sigma, dan hitung hanya orbital p yang tegak lurus bidang molekul.
+
+32
+00:04:34,314 --> 00:04:44,568
+Cukup dua parameter. Alfa: energi elektron di orbital p satu karbon. Beta: interaksi antara dua karbon yang bertetangga.
+
+33
+00:04:44,568 --> 00:04:49,796
+Atom yang tidak bertetangga dianggap tidak berinteraksi sama sekali.
+
+34
+00:04:49,796 --> 00:04:57,711
+Beta bernilai negatif, jadi energi alfa ditambah beta lebih rendah, lebih stabil, daripada alfa.
+
+35
+00:05:00,300 --> 00:05:09,067
+Etilena: dua orbital p memberi dua orbital pi, dengan energi alfa ditambah beta dan alfa dikurangi beta.
+
+36
+00:05:09,067 --> 00:05:14,449
+Butadiena: empat karbon, empat orbital p, empat orbital pi.
+
+37
+00:05:14,449 --> 00:05:24,229
+Energinya alfa ditambah satu koma enam dua beta, alfa ditambah nol koma enam dua beta, lalu pasangan cerminnya di atas alfa.
+
+38
+00:05:24,229 --> 00:05:34,373
+Perhatikan simpulnya: orbital terendah tanpa simpul, lalu satu, dua, dan tiga simpul. Makin banyak simpul, makin tinggi energinya.
+
+39
+00:05:34,373 --> 00:05:45,805
+Empat elektron pi mengisi dua orbital terbawah. Energinya lebih rendah daripada dua ikatan rangkap terpisah: elektron pi menyebar ke keempat karbon.
+
+40
+00:05:48,400 --> 00:05:52,816
+Benzena: enam orbital p membentuk enam orbital pi.
+
+41
+00:05:52,816 --> 00:06:03,115
+Ada trik indah untuk cincin: gambar segi enam di dalam lingkaran, satu sudut menunjuk ke bawah. Setiap sudut adalah satu tingkat energi.
+
+42
+00:06:03,115 --> 00:06:15,113
+Hasilnya: satu orbital alfa ditambah dua beta, dua orbital alfa ditambah beta, dua orbital alfa dikurangi beta, dan satu alfa dikurangi dua beta.
+
+43
+00:06:15,113 --> 00:06:22,817
+Enam elektron pi mengisi tepat tiga orbital ikatan. Tidak satu pun masuk ke orbital antiikatan.
+
+44
+00:06:22,817 --> 00:06:37,713
+Dibanding tiga ikatan rangkap terpisah, benzena lebih stabil sebesar dua beta, sekitar seratus lima puluh kilojoule per mol, sama dengan energi resonansi yang kita temui di video ikatan valensi.
+
+45
+00:06:40,300 --> 00:06:49,433
+Lingkaran Frost menjelaskan aturan Hückel: cincin datar terkonjugasi stabil istimewa bila punya empat n tambah dua elektron pi.
+
+46
+00:06:49,433 --> 00:07:01,653
+Dua, enam, sepuluh elektron: semua orbital ikatan terisi penuh. Benzena, anion siklopentadienil, dan kation tropilium semuanya punya enam.
+
+47
+00:07:01,653 --> 00:07:05,938
+Tapi siklobutadiena hanya punya empat elektron pi.
+
+48
+00:07:05,938 --> 00:07:15,529
+Lingkaran Frost-nya memberi dua orbital tak berikatan yang sama energinya, dan dua elektron terakhir masuk satu-satu, tak berpasangan.
+
+49
+00:07:15,529 --> 00:07:27,417
+Molekul ini sangat tidak stabil, disebut antiaromatik. Ia baru bisa diamati pada suhu sangat rendah, dan bentuknya terdistorsi menjadi persegi panjang.
+
+50
+00:07:30,033 --> 00:07:37,360
+Makin panjang rantai terkonjugasi, makin rapat orbital-orbital pi, dan celah HOMO–LUMO makin kecil.
+
+51
+00:07:37,360 --> 00:07:44,051
+Polanya mirip partikel dalam kotak: kotak yang lebih panjang, tingkat energi yang lebih rapat.
+
+52
+00:07:44,051 --> 00:07:56,495
+Butadiena menyerap ultraviolet. Tapi beta-karoten, dengan sebelas ikatan rangkap terkonjugasi, menyerap cahaya biru sekitar empat ratus lima puluh nanometer.
+
+53
+00:07:56,495 --> 00:08:01,500
+Mata kita melihat sisanya: jingga. Itulah warna wortel.
+
+54
+00:08:01,500 --> 00:08:07,894
+Pewarna, pigmen daun, dan zat penglihatan di mata kita bekerja dengan prinsip yang sama.
+
+55
+00:08:10,500 --> 00:08:17,192
+Ingat karbon monoksida: HOMO-nya di ujung karbon, dan LUMO-nya adalah orbital pi bintang.
+
+56
+00:08:17,192 --> 00:08:24,884
+Saat CO mendekati logam transisi, HOMO karbon mendonorkan elektron ke orbital d logam yang kosong.
+
+57
+00:08:24,884 --> 00:08:33,354
+Sebaliknya, orbital d logam yang terisi mengembalikan elektron ke pi bintang CO. Ini disebut donasi balik.
+
+58
+00:08:33,354 --> 00:08:46,718
+Elektron di pi bintang melemahkan ikatan C–O. Frekuensi regangannya turun dari dua ribu seratus empat puluh tiga per sentimeter pada CO bebas menjadi sekitar dua ribu atau kurang.
+
+59
+00:08:46,718 --> 00:08:52,901
+Model donasi dan donasi balik ini menjelaskan cara kerja banyak katalis logam.
+
+60
+00:08:55,500 --> 00:09:03,558
+Katalis bekerja dengan mengatur aliran elektron antara orbital perbatasan pereaksi dan permukaan katalis.
+
+61
+00:09:03,558 --> 00:09:11,274
+Ikatan yang terlalu lemah membuat pereaksi tidak menempel. Terlalu kuat, produknya tidak mau lepas.
+
+62
+00:09:11,274 --> 00:09:18,400
+Katalis terbaik berada di tengah, dan posisi orbital logam menentukan di mana letak tengah itu.
+
+63
+00:09:18,400 --> 00:09:28,545
+Kini kimiawan menghitung orbital calon katalis di komputer dengan teori fungsional kerapatan, sebelum mensintesisnya di laboratorium.
+
+64
+00:09:28,545 --> 00:09:37,758
+Bahkan material berbasis karbon dirancang dengan mengatur orbitalnya, misalnya dengan menyisipkan atom nitrogen ke kerangka karbon.
+
+65
+00:09:40,367 --> 00:09:44,840
+Molekul terkonjugasi juga bisa menjadi semikonduktor.
+
+66
+00:09:44,840 --> 00:09:52,155
+Pada sel surya organik, cahaya mengangkat elektron dari HOMO ke LUMO molekul pendonor.
+
+67
+00:09:52,155 --> 00:10:00,225
+Elektron itu lalu melompat ke LUMO molekul penerima yang sedikit lebih rendah, dan arus listrik mengalir.
+
+68
+00:10:00,225 --> 00:10:09,192
+Pada layar OLED, prosesnya terbalik: elektron dan lubang bertemu, dan selisih energinya keluar sebagai cahaya.
+
+69
+00:10:09,192 --> 00:10:16,141
+Warna layar ditentukan oleh celah HOMO–LUMO, yang dirancang dengan memilih panjang konjugasi.
+
+70
+00:10:18,533 --> 00:10:19,888
+Mari rangkum.
+
+71
+00:10:19,888 --> 00:10:26,626
+Orbital kelompok dari atom luar dicocokkan dengan orbital atom pusat yang simetrinya sama.
+
+72
+00:10:26,626 --> 00:10:33,564
+Orbital molekul metana menjelaskan dua puncak fotoelektron, tanpa membantah hibridisasi.
+
+73
+00:10:33,564 --> 00:10:40,113
+Metode Hückel dengan alfa dan beta meramal energi elektron pi butadiena dan benzena.
+
+74
+00:10:40,113 --> 00:10:48,371
+Aturan empat n tambah dua memisahkan aromatik dari antiaromatik, dan panjang konjugasi menentukan warna.
+
+75
+00:10:48,371 --> 00:10:54,731
+Donasi dan donasi balik menjelaskan ikatan logam dengan CO dan cara kerja katalis.
+
+76
+00:10:54,731 --> 00:11:03,055
+Di balik semua pencocokan itu ada satu kata kunci: simetri. Itulah topik video berikutnya.
